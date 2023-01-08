@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Balisage des microdonnées ajouté par l'outil d'aide au balisage de données structurées de Google -->
 <html lang="fr">
 
 <head>
@@ -44,33 +45,12 @@
 	<meta name="twitter:image" content="https://imene-yahiaoui.github.io/Nina-Carducci/">
 
 
- <!--   -->
-	<script type="application/ld+json">
-		{
-		  "@context": "http://schema.org",
-		  "@type": "LocalBusiness",
-		  "name": "Nina Carducci",
-		  "image": "file:///C:/Users/sadek/Desktop/Nouveau%20dossier/nina.webp",
-		  "telephone": "05 56 67 78 89",
-		  "address": {
-			"@type": "PostalAddress",
-			"streetAddress": "68 avenue Alsace-Lorraine, 33200 Bordeaux"
-		  },
-		  "openingHoursSpecification": {
-			"@type": "OpeningHoursSpecification",
-			"dayOfWeek": {
-			  "@type": "DayOfWeek",
-			  "name": "Je réponds au téléphone du lundi au vendredi de 10h à 19h"
-			}
-		  }
-		}
-		</script>
 
 </head>
 
 <body>
-	<div  itemscope itemtype="http://schema.org/LocalBusiness" class="top-header">
-		<h1  itemprop="name" class="name">Nina Carducci</h1>
+	<div itemscope itemtype="http://schema.org/LocalBusiness" itemscope="" itemtype="http://schema.org/LocalBusiness" class="top-header">
+		<h1 itemprop="name" itemprop="name" class="name">Nina Carducci</h1>
 		<div class="nav">
 			<ul>
 				<li><a href="#about">À propos</a></li>
@@ -80,19 +60,24 @@
 				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"
 						rel="noopener"><img src="assets/images/instagram.webp" alt="instagram"></a></li>
 			</ul>
+			<meta itemprop="telephone" content="05 56 67 78 89">
+		<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		<meta itemprop="streetAddress" content="68 avenue Alsace-Lorraine">
+		<meta itemprop="addressLocality" content="Bordeaux">
+		<meta itemprop="postalCode" content="33200"></span>
+		<span itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+		<span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+		<meta itemprop="name" content="Je réponds au téléphone du lundi au vendredi de 10h à 19h"></span></span>
 		</div>
 
 		
 
 
+		</div>
+		
 
 </div>
-	<meta itemprop="telephone" content="05 56 67 78 89">
-<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-<meta itemprop="streetAddress" content="68 avenue Alsace-Lorraine, 33200 Bordeaux"></span>
-<span itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
-<span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
-<meta itemprop="name" content="Je réponds au téléphone du lundi au vendredi de 10h à 19h"></span></span>
+
 	<header id="header">
 
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -251,9 +236,9 @@
 					<label for="message">Message</label>
 					<textarea name="message" id="message" cols="30" rows="10" title="textarea"></textarea>
 					<input type="submit" value="Envoyer" />
-					<p itemprop="address">68 avenue Alsace-Lorraine, 33200 Bordeaux</p>
+					<!-- <p itemprop="address">68 avenue Alsace-Lorraine, 33200 Bordeaux</p>
 					<p itemprop="telephone">téléphone : 05 56 67 78 89</p>
-					<p>Je réponds au téléphone du lundi au vendredi de 10h à 19h</p>
+					<p>Je réponds au téléphone du lundi au vendredi de 10h à 19h</p> -->
 				</form>
 			</div>
 			<div class="picture right">
