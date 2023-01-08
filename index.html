@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <!-- Balisage des microdonnées ajouté par l'outil d'aide au balisage de données structurées de Google -->
+
 <html lang="fr">
 
 <head>
 	<meta charset="UTF-8">
+	<!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
+<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "LocalBusiness",
+	  "name": "Nina Carducci",
+	  "telephone": "05 56 67 78 89",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "68 avenue Alsace-Lorraine",
+		"addressLocality": "Bordeaux",
+		"postalCode": "33200"
+	  },
+	  "openingHoursSpecification": {
+		"@type": "OpeningHoursSpecification",
+		"dayOfWeek": {
+		  "@type": "DayOfWeek",
+		  "name": "Je réponds au téléphone du lundi au vendredi de 10h à 19h"
+		}
+	  }
+	}
+	</script>
+
+	
+	
 	<title>Nina Carducci</title>
-	  <!-- icon de la page -->
-	  <link rel="icon" href="./assets/images/icon.png" />
-	  <link rel="shortcut" href="./assets/images/icon.png" />
-	  <link rel="apple-touch-icon" href="./assets/images/icon.png" />
+	  <!-- icon de la page --> 
+	  <link rel="icon" href="./assets/images/icon.png"  purpose="any maskable" type="image/png" sizes="196x196"/>
+	  <link rel="shortcut" href="./assets/images/icon.png" purpose="any maskable" type="image/png" sizes="196x196" />
+	  <link rel="apple-touch-icon" href="./assets/images/icon.png"  purpose="any maskable" type="image/png" sizes="196x196"  />
 
 	<meta name="description"
 		content="Votre photographe mariage, grossesse, naissance et famille en Bordeaux,  Des photos avec des résultats professionnel.">
@@ -44,8 +70,8 @@
 		content="Votre photographe mariage, grossesse, naissance et famille en Bordeaux,  Des photos avec des résultats professionnel">
 	<meta name="twitter:image" content="https://imene-yahiaoui.github.io/Nina-Carducci/">
 
-
-
+	<meta name="theme-color" content="white" />
+	
 </head>
 
 <body>
@@ -60,14 +86,14 @@
 				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"
 						rel="noopener"><img src="assets/images/instagram.webp" alt="instagram"></a></li>
 			</ul>
-			<meta itemprop="telephone" content="05 56 67 78 89">
+			<!-- <meta itemprop="telephone" content="05 56 67 78 89">
 		<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 		<meta itemprop="streetAddress" content="68 avenue Alsace-Lorraine">
 		<meta itemprop="addressLocality" content="Bordeaux">
 		<meta itemprop="postalCode" content="33200"></span>
 		<span itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
 		<span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
-		<meta itemprop="name" content="Je réponds au téléphone du lundi au vendredi de 10h à 19h"></span></span>
+		<meta itemprop="name" content="Je réponds au téléphone du lundi au vendredi de 10h à 19h"></span></span> -->
 		</div>
 
 		
@@ -116,8 +142,8 @@
 		</div>
 	</header>
 	<section id="about">
-		<div class="picture left">
-			<img src="./assets/images/nina.webp" alt="Nina" height="100%" width="100%">
+		<div itemscope itemtype="http://schema.org/LocalBusiness" class="picture left">
+			<img itemprop="image" src="./assets/images/nina.webp" alt="Nina" />
 		</div>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
@@ -176,7 +202,7 @@
 		</div>
 	</div>
 	<div id="services">
-		<h3 class="title">Mes services</h3>
+		<h2 class="title">Mes services</h2>
 		<div class="container">
 			<div class="service">
 				<div class="service__description">
@@ -217,8 +243,8 @@
 	<div class="quote">
 		<figure>
 			<blockquote>
-				<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
-					traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+				<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
+					traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
@@ -226,7 +252,7 @@
 	<div id="contact">
 		<div class="container">
 			<div class="form-container">
-				<h3>Une question ? Une demande de devis ?</h3>
+				<h5>Une question ? Une demande de devis ?</h5>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 				<form action="#" method="post">
 					<label for="nom">Nom</label>
@@ -242,7 +268,7 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="./assets/images/camera.webp" alt="camera">
+				<img  src="./assets/images/camera.webp" alt="camera">
 			</div>
 		</div>
 	</div>
