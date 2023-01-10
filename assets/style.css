@@ -63,8 +63,8 @@ body {
   z-index: 0;
 }
 .picture img {
-  width:100%;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 #about-me {
   flex: 2;
@@ -87,7 +87,6 @@ body {
 .title {
   text-align: center;
   padding-block: 2em;
- 
 }
 .gallery .nav {
   justify-content: center;
@@ -140,7 +139,6 @@ body {
   font-style: italic;
   font-weight: 300;
   font-size: 37px;
-
 }
 .quote__author {
   font-family: Spectral;
@@ -189,15 +187,15 @@ body {
   display: flex;
 }
 
- 
-.d-block ,.w-100,
-.picture.left img{
-    width: 100%;
-height: 100%
+.d-block,
+.w-100,
+.picture.left img {
+  width: 100%;
+  height: 100%;
 }
-b{
+b {
   font-size: 20px;
-  display:grid;
+  display: grid;
 }
 
 .picture.right::before {
@@ -213,9 +211,8 @@ b{
 .form-container {
   flex: 2;
 }
-.form-container h5{
-  font-size: 33px;
-
+.form-container h5 {
+  font-size: 2rem;
 }
 form {
   display: flex;
